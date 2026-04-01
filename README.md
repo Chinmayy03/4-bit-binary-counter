@@ -1,13 +1,2 @@
-4-Bit Binary Counter (Experiential Learning Project):
-This project is a hardware-software integration that implements a 4-bit binary counter using an Arduino. It demonstrates the conversion of decimal increments into binary output displayed via LEDs.
-Key Features:
-*Binary Visualization: Uses 4 LEDs to represent numbers from 0 to 15 (2^4 - 1).
-*Non-Blocking Debounce: Implements a millis() based debounce logic to ensure accurate button presses without pausing the processor.
-*Bitwise Logic: Utilizes bit-shifting (val >> i) and bitwise AND (& 1) to map the counter value directly to specific hardware pins.
-*Pull-up Configuration: Uses INPUT_PULLUP for the button to simplify the circuit by eliminating the need for external resistors.
-#Hardware Components
-i) Arduino Uno 
-ii) 4x LEDs (Pins 3, 4, 5, 6)
-iii) 1x Push Button (Pin 2)
-iv) Resistors for LEDs
-Technical ImplementationThe core logic resides in the updateLEDs function, which iterates through the 4-bit range. By shifting the counter value, the code checks if each specific bit is "high" or "low" and sets the corresponding LED state accordingly
+Project Description:
+This hardware-software integration project implements a 4-bit binary counter using an Arduino Uno, designed as part of my 1st-semester experiential learning. The system demonstrates the conversion of decimal increments into a 4-bit binary output (0-15) displayed through a series of LEDs. Key technical features include a non-blocking debounce logic using millis() to ensure precise button input, and efficient bitwise shifting (val >> i) and AND operations ( 1) to map software counter states directly to hardware pins. By utilizing the internal INPUT_PULLUP resistor for the trigger button, the project maintains a streamlined circuit design while highlighting fundamental concepts in digital electronics and embedded C programming.
